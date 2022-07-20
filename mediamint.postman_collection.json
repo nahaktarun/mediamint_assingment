@@ -1,0 +1,55 @@
+{
+	"info": {
+		"_postman_id": "17355593-2aad-4830-a3c7-fcc3e64695dd",
+		"name": "mediamint",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "21915437"
+	},
+	"item": [
+		{
+			"name": "Get All users",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:8000/api/getAll"
+			},
+			"response": []
+		},
+		{
+			"name": "Get user",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:8000/api/getOne/1"
+			},
+			"response": []
+		},
+		{
+			"name": "Post User",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n   \"user_id\": 30,\n    \"user_name\": \"Karthik Shah\",\n    \"user_email\": \"karthik_shah@borer.info\",\n    \"user_gender\": \"female\",\n    \"user_status\": \"inactive\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:8000/api/post/"
+			},
+			"response": []
+		},
+		{
+			"name": "update user",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"url": "http://localhost:8000/api/update/1"
+			},
+			"response": []
+		}
+	]
+}
